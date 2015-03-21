@@ -8,12 +8,13 @@ public class MovementScript : MonoBehaviour {
 	
 	public float movementSpeed = 3f;
     public string pathName = "Waypoints";
+	private GameLogic logicScript;
 	
 	// Use this for initialization
 	void Start () 
 	{
-
 		_waypoints = GameObject.Find (pathName).transform;
+		logicScript = GameObject.Find("GameLogic").GetComponent<GameLogic>();
 	}
 	
 	// Update is called once per frame
@@ -47,6 +48,7 @@ public class MovementScript : MonoBehaviour {
 			else
 			{
 				// Inform level script that a unit has reached the last waypoint
+				logicScript.lifePoints--;
 				Destroy(gameObject);
 				return;
 			}
