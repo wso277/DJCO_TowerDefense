@@ -21,27 +21,3 @@ public class Tower : MonoBehaviour {
 
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
