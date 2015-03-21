@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 public class HealthBar : MonoBehaviour {
-	public Tower Player;
+	public Tower Tower;
 	public Transform ForegroundSprite;
 	public SpriteRenderer ForegroundRendered; // para trocar a cor da barra a medida que vai ate ao zero
 	public Color MaxHelathColor = new Color (255 / 255f, 63 / 255f, 63 / 255f);
