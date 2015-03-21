@@ -7,12 +7,13 @@ public class MovementScript : MonoBehaviour {
 	private Transform _waypoints;
 	
 	public float movementSpeed = 3f;
+    public string pathName = "Waypoints";
 	
 	// Use this for initialization
 	void Start () 
 	{
 
-		_waypoints = GameObject.Find ("Waypoints").transform;
+		_waypoints = GameObject.Find (pathName).transform;
 	}
 	
 	// Update is called once per frame
@@ -53,7 +54,7 @@ public class MovementScript : MonoBehaviour {
 		else
 		{
 			// Walk towards waypoint
-			rigidbody2D.AddForce(new Vector2(movementNormal.x, movementNormal.y) * movementSpeed);
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(movementNormal.x, movementNormal.y) * movementSpeed);
 		}
 		
 		// Face walk direction
