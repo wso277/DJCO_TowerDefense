@@ -1,7 +1,11 @@
 fileFormatVersion: 2
-guid: 32079229cbbe9054684899f736977803
+guid: 7c8d150ff65bd434582f5350bf1130bd
+timeCreated: 1426963551
+licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: GUI_0
+    21300002: GUI_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -20,6 +24,9 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
@@ -30,8 +37,9 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +50,28 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: GUI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 128
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GUI_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 85
+        width: 8
+        height: 18
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
