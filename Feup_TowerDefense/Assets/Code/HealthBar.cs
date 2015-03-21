@@ -8,11 +8,11 @@ public class HealthBar : MonoBehaviour {
 	public Color MinHealthColor = new Color (64 / 255f, 137 / 255f, 255 / 255f);
 	
 	public void Update(){
-		var healthPercent = Tower.Health / (float) Tower.MaxHealth;
+	/*	var healthPercent = Tower.Health / (float) Tower.MaxHealth;
 		
 		ForegroundSprite.localScale = new Vector3 (healthPercent, 1, 1);
 		ForegroundRendered.color = Color.Lerp (MaxHelathColor, MinHealthColor, healthPercent);// retorna uma cor entre o max e min de acordo com a distancia
-	}
+	*/}
 }
 
 
