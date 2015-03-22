@@ -29,6 +29,7 @@ public class Spawner : MonoBehaviour
         if (spawnTime > 0.5f)
         {
             yield return new WaitForSeconds(timeUntilStart);
+            endSpawnTime += 2;
             spawnTime -= 0.5f;
             if (sleepBetweenSpawn > 1f)
             {
@@ -44,7 +45,6 @@ public class Spawner : MonoBehaviour
         yield return new WaitForSeconds(timeUntilStart);
         if (spawnTime > 0.5f)
         {
-            endSpawnTime += 2;
             StartCoroutine(InvokeRepeatingRange(spawner, spawnTime, 0, endSpawnTime));
         }
         while (currentTime > initTime && sleepBetweenSpawn > 0)
