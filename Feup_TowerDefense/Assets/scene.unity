@@ -1418,6 +1418,7 @@ MonoBehaviour:
   enemy3: {fileID: 1297487204}
   spawnTime: 10
   sleepBetweenSpawn: 10
+  endSpawnTime: 10
 --- !u!1 &323786795
 GameObject:
   m_ObjectHideFlags: 0
