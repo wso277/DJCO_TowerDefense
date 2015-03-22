@@ -8,6 +8,7 @@ public class MovementScript : MonoBehaviour {
 	
 	public float movementSpeed = 3f;
     public string pathName = "Waypoints";
+	public bool active = true;
 	private GameLogic logicScript;
 	
 	// Use this for initialization
@@ -26,6 +27,7 @@ public class MovementScript : MonoBehaviour {
 	// Fixed update
 	void FixedUpdate()
 	{
+		if (active)
 		handleWalkWaypoints();
 	}
 	
