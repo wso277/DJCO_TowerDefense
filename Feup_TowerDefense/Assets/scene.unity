@@ -5473,6 +5473,7 @@ GameObject:
   - 212: {fileID: 1479974645}
   - 50: {fileID: 1479974644}
   - 114: {fileID: 1479974643}
+  - 61: {fileID: 1479974647}
   m_Layer: 9
   m_Name: Enemy4
   m_TagString: Untagged
@@ -5547,6 +5548,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!61 &1479974647
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1479974642}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .159999996, y: .159999996}
 --- !u!1 &1482051522
 GameObject:
   m_ObjectHideFlags: 0
@@ -7911,6 +7925,14 @@ Prefab:
     - target: {fileID: 152680, guid: d6f2c9db830a747248d16e8714956cb1, type: 2}
       propertyPath: m_Name
       value: Tower 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5815766, guid: d6f2c9db830a747248d16e8714956cb1, type: 2}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5815766, guid: d6f2c9db830a747248d16e8714956cb1, type: 2}
+      propertyPath: m_Radius
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6f2c9db830a747248d16e8714956cb1, type: 2}
