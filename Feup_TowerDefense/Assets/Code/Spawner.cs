@@ -4,10 +4,11 @@ using System.Collections;
 public class Spawner : MonoBehaviour
 {
 
-    public GameObject enemy1, enemy2, enemy3;
+	public GameObject bowMoblinEnemy1, bowMoblinEnemy2, spearMoblinEnemy;
     public float spawnTime = 10f;
     public float sleepBetweenSpawn = 3f;
     public float endSpawnTime = 10f;
+	public float sleepBetweenEachEnemy = 0.2f;
     public delegate void Spawn();
 
     // Use this for initialization
@@ -15,9 +16,9 @@ public class Spawner : MonoBehaviour
     {
 		InitialWave();
         StartCoroutine(TimeDecreaser(spawnTime));
-        StartCoroutine(InvokeRepeatingRange(NewEnemy1, spawnTime, 0, endSpawnTime));
-        StartCoroutine(InvokeRepeatingRange(NewEnemy2, spawnTime, 0, endSpawnTime));
-        StartCoroutine(InvokeRepeatingRange(NewEnemy3, spawnTime, 0, endSpawnTime));
+		StartCoroutine(InvokeRepeatingRange(NewBowMoblinEnemy1, spawnTime, 0, endSpawnTime));
+		StartCoroutine(InvokeRepeatingRange(NewBowMoblinEnemy2, spawnTime, 0, endSpawnTime));
+		StartCoroutine(InvokeRepeatingRange(NewSpearMoblinEnemy, spawnTime, 0, endSpawnTime));
     }
 
     // Update is called once per frame
@@ -27,7 +28,7 @@ public class Spawner : MonoBehaviour
 
     IEnumerator TimeDecreaser(float timeUntilStart)
     {
-        if (spawnTime > 0.5f)
+        if (spawnTime > 1f)
         {
             yield return new WaitForSeconds(timeUntilStart);
             if (endSpawnTime < 15)
@@ -43,11 +44,12 @@ public class Spawner : MonoBehaviour
         }
     }
 
+	// This function is invoked after timeUntilStart seconds, and it spawns a wave of enemies, where the enemy type is specified via the spawner function
     IEnumerator InvokeRepeatingRange(Spawn spawner, float timeUntilStart, float initTime, float endTime)
     {
         float currentTime = endTime;
         yield return new WaitForSeconds(timeUntilStart);
-        if (spawnTime > 0.5f)
+        if (spawnTime > 1f)
         {
             StartCoroutine(InvokeRepeatingRange(spawner, spawnTime, 0, endSpawnTime));
         }
@@ -57,33 +59,37 @@ public class Spawner : MonoBehaviour
             currentTime -= sleepBetweenSpawn;
             Debug.Log(currentTime);
             Debug.Log(sleepBetweenSpawn);
-            yield return new WaitForSeconds(0.15f);
+			yield return new WaitForSeconds(sleepBetweenEachEnemy);
         }
     }
 
+	//Spawns the initial wave -> 1 enemy of each kind
 	void InitialWave() {
-		NewEnemy1();
-		NewEnemy2();
-		NewEnemy3();
+		NewBowMoblinEnemy1();
+		NewBowMoblinEnemy2();
+		NewSpearMoblinEnemy();
 	}
 
-    void NewEnemy1()
+	//Instatiates a bow moblin enemy
+	void NewBowMoblinEnemy1()
     {
-        GameObject newEnemy = Instantiate(enemy1) as GameObject;
+		GameObject newEnemy = Instantiate(bowMoblinEnemy1) as GameObject;
         MovementScript movScript = newEnemy.GetComponent("MovementScript") as MovementScript;
         movScript.active = true;
     }
 
-    void NewEnemy2()
+	//Instatiates a bow moblin enemy, with a different path from number 1
+	void NewBowMoblinEnemy2()
     {
-        GameObject newEnemy = Instantiate(enemy2) as GameObject;
+		GameObject newEnemy = Instantiate(bowMoblinEnemy2) as GameObject;
         MovementScript movScript = newEnemy.GetComponent("MovementScript") as MovementScript;
         movScript.active = true;
     }
 
-    void NewEnemy3()
+	//Instatiates a spear moblin enemy
+	void NewSpearMoblinEnemy()
     {
-        GameObject newEnemy = Instantiate(enemy3) as GameObject;
+		GameObject newEnemy = Instantiate(spearMoblinEnemy) as GameObject;
         MovementScript movScript = newEnemy.GetComponent("MovementScript") as MovementScript;
         movScript.active = true;
     }

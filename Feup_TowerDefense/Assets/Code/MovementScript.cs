@@ -50,8 +50,8 @@ public class MovementScript : MonoBehaviour {
 			else
 			{
 				// Inform level script that a unit has reached the last waypoint
-				logicScript.lifePoints--;
 				Destroy(gameObject);
+				logicScript.TakeDamage(1);
 				return;
 			}
 		}
