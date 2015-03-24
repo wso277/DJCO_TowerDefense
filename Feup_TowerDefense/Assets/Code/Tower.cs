@@ -24,7 +24,7 @@ public class Tower : MonoBehaviour {
 	}
 	
 	public void Update(){
-		var projectile = (Projectile)Instantiate (Projectile, transform.position, transform.rotation);
-		projectile.Initialize (gameObject, _direction, _velocity);
+	//	var projectile = (Projectile)Instantiate (Projectile, transform.position, transform.rotation);
+	//	projectile.Initialize (gameObject, _direction, _velocity);
 	}
 }

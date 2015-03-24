@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 11e15271c11d1e64499c23af7852dab2
+timeCreated: 1427192071
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bow_moblin_walk1
+    21300002: bow_moblin_walk2
+    21300004: bow_moblin_walk3
+    21300006: bow_moblin_walk4
+    21300008: bow_moblin_walk5
+    21300010: bow_moblin_walk6
+    21300012: bow_moblin_shoot1
+    21300014: bow_moblin_shoot2
+    21300016: bow_moblin_shoot3
+    21300018: bow_moblin_shoot4
+    21300020: arrow1
+    21300022: arrow2
+    21300024: arrow3
+    21300026: arrow4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bow_moblin_walk1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 85
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bow_moblin_walk2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 85
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bow_moblin_walk3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 86
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bow_moblin_walk4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 83
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bow_moblin_walk5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 82
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bow_moblin_walk6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 83
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bow_moblin_shoot1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 85
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bow_moblin_shoot2
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 87
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bow_moblin_shoot3
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 85
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bow_moblin_shoot4
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 87
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow1
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 89
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow2
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 72
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow3
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 50
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow4
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 17
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

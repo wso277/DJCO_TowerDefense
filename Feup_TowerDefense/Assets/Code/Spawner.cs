@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+		InitialWave();
         StartCoroutine(TimeDecreaser(spawnTime));
         StartCoroutine(InvokeRepeatingRange(NewEnemy1, spawnTime, 0, endSpawnTime));
         StartCoroutine(InvokeRepeatingRange(NewEnemy2, spawnTime, 0, endSpawnTime));
@@ -56,6 +57,12 @@ public class Spawner : MonoBehaviour
             yield return new WaitForSeconds(0.15f);
         }
     }
+
+	void InitialWave() {
+		NewEnemy1();
+		NewEnemy2();
+		NewEnemy3();
+	}
 
     void NewEnemy1()
     {
