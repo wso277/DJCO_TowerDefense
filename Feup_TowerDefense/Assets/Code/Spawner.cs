@@ -30,7 +30,10 @@ public class Spawner : MonoBehaviour
         if (spawnTime > 0.5f)
         {
             yield return new WaitForSeconds(timeUntilStart);
-            endSpawnTime += 2;
+            if (endSpawnTime < 15)
+            {
+                endSpawnTime += 0.5f;
+            }
             spawnTime -= 0.5f;
             if (sleepBetweenSpawn > 1f)
             {
