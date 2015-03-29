@@ -16,20 +16,22 @@ public class Attacking : MonoBehaviour {
 	    
 	}
 
+	// Collision detection
     void OnTriggerEnter2D(Collider2D collider)
     {
-        //Debug.Log("collision");
+		// if it collided with a tower
         if (collider.transform.parent != null && collider.transform.parent.name == "Towers")
         {
-            //Debug.Log("Tower");
+			//change animation to attack the tower
             anim.Play("bowMoblinAttack");
             MovementScript moblinMovScript = gameObject.GetComponent("MovementScript") as MovementScript;
             moblinMovScript.movementSpeed = 0.5f;
             GameObject newArrow = Instantiate(arrow) as GameObject;
             Transform arrowTransform = newArrow.transform;
+			// Set the arrow position to be just in front of the moblin, according to the moblin and tower position
 			arrowTransform.position = new Vector3(transform.position.x + (Mathf.Cos((collider.transform.position.x - transform.position.x))*0.5f), transform.position.y + (Mathf.Sin((collider.transform.position.y - transform.position.y))*0.2f), transform.position.z);
-            MovementScript movScript = newArrow.GetComponent("MovementScript") as MovementScript;
-            Debug.Log(collider.gameObject.name);
+            // Set the path the arrow has to follow
+			MovementScript movScript = newArrow.GetComponent("MovementScript") as MovementScript;
             movScript.pathName = collider.gameObject.name;
             movScript.active = true;
             moblinMovScript.movementSpeed = 10;
