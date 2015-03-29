@@ -76,6 +76,8 @@ public class Spawner : MonoBehaviour
 		GameObject newEnemy = Instantiate(bowMoblinEnemy1) as GameObject;
         MovementScript movScript = newEnemy.GetComponent("MovementScript") as MovementScript;
         movScript.active = true;
+        newEnemy.GetComponent<CircleCollider2D>().enabled = true;
+        
     }
 
 	//Instatiates a bow moblin enemy, with a different path from number 1
@@ -84,6 +86,7 @@ public class Spawner : MonoBehaviour
 		GameObject newEnemy = Instantiate(bowMoblinEnemy2) as GameObject;
         MovementScript movScript = newEnemy.GetComponent("MovementScript") as MovementScript;
         movScript.active = true;
+        newEnemy.GetComponent<CircleCollider2D>().enabled = true;
     }
 
 	//Instatiates a spear moblin enemy
@@ -92,5 +95,6 @@ public class Spawner : MonoBehaviour
 		GameObject newEnemy = Instantiate(spearMoblinEnemy) as GameObject;
         MovementScript movScript = newEnemy.GetComponent("MovementScript") as MovementScript;
         movScript.active = true;
+        //newEnemy.GetComponent<CircleCollider2D>().enabled = true;
     }
 }

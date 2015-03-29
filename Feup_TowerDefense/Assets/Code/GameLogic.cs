@@ -17,7 +17,7 @@ public class GameLogic : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {	
 		if (currentLifePoints <= 0) {
-			Application.LoadLevel(Application.loadedLevel);
+			//Application.LoadLevel(Application.loadedLevel);
 		}
 
 	}
