@@ -27,7 +27,7 @@ public class Attacking : MonoBehaviour {
             moblinMovScript.movementSpeed = 0.5f;
             GameObject newArrow = Instantiate(arrow) as GameObject;
             Transform arrowTransform = newArrow.transform;
-            arrowTransform.position = transform.position;
+			arrowTransform.position = new Vector3(transform.position.x + (Mathf.Cos((collider.transform.position.x - transform.position.x))*0.5f), transform.position.y + (Mathf.Sin((collider.transform.position.y - transform.position.y))*0.2f), transform.position.z);
             MovementScript movScript = newArrow.GetComponent("MovementScript") as MovementScript;
             Debug.Log(collider.gameObject.name);
             movScript.pathName = collider.gameObject.name;
