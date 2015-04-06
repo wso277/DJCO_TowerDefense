@@ -74,16 +74,17 @@ public class Spawner : MonoBehaviour
 	void NewBowMoblinEnemy1()
     {
 		GameObject newEnemy = Instantiate(bowMoblinEnemy1) as GameObject;
+		newEnemy.tag = "Enemy";
         MovementScript movScript = newEnemy.GetComponent("MovementScript") as MovementScript;
         movScript.active = true;
         newEnemy.GetComponent<CircleCollider2D>().enabled = true;
-        
     }
 
 	//Instatiates a bow moblin enemy, with a different path from number 1
 	void NewBowMoblinEnemy2()
     {
 		GameObject newEnemy = Instantiate(bowMoblinEnemy2) as GameObject;
+		newEnemy.tag = "Enemy";
         MovementScript movScript = newEnemy.GetComponent("MovementScript") as MovementScript;
         movScript.active = true;
         newEnemy.GetComponent<CircleCollider2D>().enabled = true;
@@ -93,6 +94,7 @@ public class Spawner : MonoBehaviour
 	void NewSpearMoblinEnemy()
     {
 		GameObject newEnemy = Instantiate(spearMoblinEnemy) as GameObject;
+		newEnemy.tag = "Enemy";
         MovementScript movScript = newEnemy.GetComponent("MovementScript") as MovementScript;
         movScript.active = true;
         //newEnemy.GetComponent<CircleCollider2D>().enabled = true;
