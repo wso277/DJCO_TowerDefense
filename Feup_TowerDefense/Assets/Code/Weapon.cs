@@ -11,6 +11,11 @@ public class Weapon : MonoBehaviour {
 	public Transform BulletTrailPrefab;
 	public Transform MuzzleFlashPrefab;
 	
+	public GameObject FireProjectileEffect;
+	public Transform ProjectileFireLocation;
+	
+	public AudioClip TowerShootSound;
+	
 	float timeToFire = 0;
 	float timeToSpawnEffect;
 	public float effectSpawnRate  = 0;
@@ -53,8 +58,16 @@ public class Weapon : MonoBehaviour {
 	}
 
 	void Shoot(GameObject enemy) {
+		if (FireProjectileEffect != null) {
+			var effect = (GameObject) Instantiate (FireProjectileEffect, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
+			effect.transform.parent = transform;
+		}
+
 		Transform bullet = (Transform) Instantiate (BulletPrefab, this.transform.position, this.transform.rotation);
 		BulletLogic b = bullet.GetComponent<BulletLogic> ();
 		b.target = enemy;
+
+		/*Sons para accoes do jogador*/
+		AudioSource.PlayClipAtPoint (TowerShootSound, transform.position);
 	}
 }
