@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour {
 	public Transform MuzzleFlashPrefab;
 	
 	public GameObject FireProjectileEffect;
+	public GameObject TakeDamageEnemyEffect;
 	public Transform ProjectileFireLocation;
 	
 	public AudioClip TowerShootSound;
@@ -37,6 +38,10 @@ public class Weapon : MonoBehaviour {
 		GameObject closestEnemy = GetClosestEnemy ();
 		if (closestEnemy != null && Time.time > timeToFire) {
 			timeToFire = Time.time + 1/fireRate;
+			if (TakeDamageEnemyEffect != null) {
+				var effect = (GameObject) Instantiate (TakeDamageEnemyEffect, closestEnemy.transform.position, closestEnemy.transform.rotation);
+				effect.transform.parent = transform;
+			}
 			Shoot(closestEnemy);
 		}
 	}
