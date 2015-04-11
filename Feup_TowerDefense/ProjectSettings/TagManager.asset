@@ -18,8 +18,8 @@ TagManager:
   - Foreground
   - Enemy
   - Pop Up
-  - 
-  - 
+  - EnemyBridge
+  - Bridge
   - 
   - 
   - 
@@ -41,6 +41,12 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 1383831007
+    locked: 0
+  - name: EnemyBridge
+    uniqueID: 127989349
+    locked: 0
+  - name: Bridge
+    uniqueID: 4093070007
     locked: 0
   - name: Foreground
     uniqueID: 3504748903
