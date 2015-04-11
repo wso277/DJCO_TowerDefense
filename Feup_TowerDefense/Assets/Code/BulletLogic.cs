@@ -6,7 +6,7 @@ public class BulletLogic : MonoBehaviour {
 	public GameObject target;
     public GameObject tower;
 
-	public float speed = 1000.5f;
+	public float speed = 2000f;
 	public float distanceToEnemy;
 
 	private Vector3 velocity;
@@ -20,8 +20,9 @@ public class BulletLogic : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
 		if (target != null) {
-			transform.position = Vector3.SmoothDamp (transform.position, target.transform.position, ref velocity, 0.1f);
+			transform.position = Vector3.SmoothDamp (transform.position, target.transform.position, ref velocity, 0.05f);
 
 			relative = target.transform.position - transform.position;
 			distanceToEnemy = relative.magnitude;
@@ -38,6 +39,8 @@ public class BulletLogic : MonoBehaviour {
 				
                 Destroy (gameObject);
 			}
+		} else {
+			Destroy (gameObject);
 		}
 	}
 }
