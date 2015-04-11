@@ -30,6 +30,10 @@ public class Tower1Spawner : MonoBehaviour {
 			   && mousePosition.y <= GameObject.Find("TowerZone").transform.position.y
 			   && mousePosition.x <= GameObject.Find("TowerZone2").transform.position.x
 			   && mousePosition.y >= GameObject.Find("TowerZone2").transform.position.y
+			   || mousePosition.x >= GameObject.Find("TowerZoneC1").transform.position.x
+			   && mousePosition.y <= GameObject.Find("TowerZoneC1").transform.position.y
+			   && mousePosition.x <= GameObject.Find("TowerZoneC2").transform.position.x
+			   && mousePosition.y >= GameObject.Find("TowerZoneC2").transform.position.y
 			   ){
 				Debug.Log ("x: " + mousePosition.x + " y: " + mousePosition.y + " z: " + mousePosition.z);
 				Debug.Log ("x: " + GameObject.Find("TowerZone").transform.position.x + " y: " + GameObject.Find("TowerZone").transform.position.y + " z: " + GameObject.Find("TowerZone").transform.position.z);
