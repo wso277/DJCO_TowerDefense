@@ -14,20 +14,27 @@ public class Tower1Spawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
 		mousePosition = Input.mousePosition;
 		mousePosition.z = -7.84f;
 		mousePosition = Camera.main.ScreenToWorldPoint (mousePosition);
 		mousePosition.x = -mousePosition.x;
 		mousePosition.y = -mousePosition.y + 3;
 		mousePosition.z = 0;
+
 		//transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
 		transform.position = mousePosition;
 		//Debug.Log ("x: " + mousePosition.x + " y: " + mousePosition.y + " z: " + mousePosition.z);
 
 		if (Input.GetMouseButtonDown (0)) {
+			if(mousePosition.x >= GameObject.Find("TowerZone").transform.position.x
+			   && mousePosition.y <= GameObject.Find("TowerZone").transform.position.y
+			   && mousePosition.x <= GameObject.Find("TowerZone2").transform.position.x
+			   && mousePosition.y >= GameObject.Find("TowerZone2").transform.position.y
+			   ){
+				Debug.Log ("x: " + mousePosition.x + " y: " + mousePosition.y + " z: " + mousePosition.z);
+				Debug.Log ("x: " + GameObject.Find("TowerZone").transform.position.x + " y: " + GameObject.Find("TowerZone").transform.position.y + " z: " + GameObject.Find("TowerZone").transform.position.z);
 			Transform tower = (Transform)Instantiate (TowerPrefab, this.transform.position, this.transform.rotation);
-			Destroy(gameObject);
+				Destroy(gameObject);}
 		}
 	}
 }
