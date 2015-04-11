@@ -52,6 +52,7 @@ public class Weapon : MonoBehaviour {
 			if (towerCollider.bounds.Intersects (enemyCollider.bounds)) {
 				Shoot(closestEnemy);
 			}
+
 		}
 	}
 
