@@ -61,6 +61,7 @@
      <Compile Include="Assets\Code\TowerLife.cs" />
      <Compile Include="Assets\Code\Weapon.cs" />
      <Compile Include="Assets\Code\gameOver.cs" />
+     <Compile Include="Assets\SplashScreenLogic.cs" />
      <Compile Include="Assets\Tower1Selector.cs" />
      <Compile Include="Assets\Tower1Spawner.cs" />
  <Reference Include="UnityEngine.UI">
