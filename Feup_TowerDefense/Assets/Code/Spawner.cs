@@ -57,8 +57,6 @@ public class Spawner : MonoBehaviour
         {
             spawner();
             currentTime -= sleepBetweenSpawn;
-            Debug.Log(currentTime);
-            Debug.Log(sleepBetweenSpawn);
 			yield return new WaitForSeconds(sleepBetweenEachEnemy);
         }
     }
@@ -97,6 +95,6 @@ public class Spawner : MonoBehaviour
 		newEnemy.tag = "Enemy";
         MovementScript movScript = newEnemy.GetComponent("MovementScript") as MovementScript;
         movScript.active = true;
-        //newEnemy.GetComponent<CircleCollider2D>().enabled = true;
+        newEnemy.GetComponent<CircleCollider2D>().enabled = true;
     }
 }

@@ -23,7 +23,7 @@ public class GameLogic : MonoBehaviour {
 	void Update () {	
 		enemies = GameObject.FindGameObjectsWithTag("Enemy");
 		if (currentLifePoints <= 0) {
-			//Application.LoadLevel(Application.loadedLevel);
+			Application.LoadLevel(Application.loadedLevel);
 		}
 
 	}

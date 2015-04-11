@@ -31,14 +31,13 @@ public class Attacking : MonoBehaviour {
 			// Set the arrow position to be just in front of the moblin, according to the moblin and tower position
 			arrowTransform.position = new Vector3(transform.position.x + (Mathf.Cos((collider.transform.position.x - transform.position.x))*0.5f), transform.position.y + (Mathf.Sin((collider.transform.position.y - transform.position.y))*0.2f), transform.position.z);
             // Set the path the arrow has to follow
-			MovementScript movScript = newArrow.GetComponent("MovementScript") as MovementScript;
+			ArrowMovement movScript = newArrow.GetComponent("ArrowMovement") as ArrowMovement;
             movScript.pathName = collider.gameObject.name;
             movScript.active = true;
             moblinMovScript.movementSpeed = 10;
         }
         else
         {
-            Debug.Log("collision");
         }
     }
 

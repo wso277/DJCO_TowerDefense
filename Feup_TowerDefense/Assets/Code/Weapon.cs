@@ -6,43 +6,52 @@ public class Weapon : MonoBehaviour {
 	public float fireRate = 2;
 	public float damage = 10;
 	public float range = 10;
-	public LayerMask whatToIt;
-	
-	public Transform BulletTrailPrefab;
-	public Transform MuzzleFlashPrefab;
+	private float timeToFire = 0;
+	private float distanceToEnemy;
+
+	public Transform ProjectileFireLocation;
+	public Transform BulletPrefab;
+	public Transform bullet;
 	
 	public GameObject FireProjectileEffect;
 	public GameObject TakeDamageEnemyEffect;
-	public Transform ProjectileFireLocation;
+	private GameObject effect;
+	private GameObject closestEnemy;
+
+	private GameObject[] enemies;
 	
 	public AudioClip TowerShootSound;
-	
-	float timeToFire = 0;
-	float timeToSpawnEffect;
-	public float effectSpawnRate  = 0;
 
-	public Transform BulletPrefab;
+	private Collider2D towerCollider;
+	private Collider2D enemyCollider;
+
+	public BulletLogic bulletLogicScript;
 	
-	Transform firePoint;
+	//Transform firePoint;
+
+	void Start() {
+		towerCollider = this.GetComponent<Collider2D> ();
+	}
 
 	void Awake () {
-		firePoint = transform.FindChild ("FirePoint");
+		/*firePoint = transform.FindChild ("FirePoint");
 		if(firePoint == null) {
 			Debug.LogError ("No FirePoint ? What?!");
-		}
+		}*/
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-		GameObject closestEnemy = GetClosestEnemy ();
+		closestEnemy = GetClosestEnemy ();
 		if (closestEnemy != null && Time.time > timeToFire) {
 			timeToFire = Time.time + 1/fireRate;
-			if (TakeDamageEnemyEffect != null) {
-				var effect = (GameObject) Instantiate (TakeDamageEnemyEffect, closestEnemy.transform.position, closestEnemy.transform.rotation);
-				effect.transform.parent = transform;
+			
+			enemyCollider = closestEnemy.GetComponent<Collider2D> ();
+
+			if (towerCollider.bounds.Intersects (enemyCollider.bounds)) {
+				Shoot(closestEnemy);
 			}
-			Shoot(closestEnemy);
 		}
 	}
 
@@ -50,13 +59,15 @@ public class Weapon : MonoBehaviour {
 
 		float smallestDistance = float.PositiveInfinity;
 		GameObject result = null;
-		GameObject[] enemies = GameLogic.instance.enemies;
+		enemies = GameLogic.instance.enemies;
 
 		foreach (GameObject enemy in enemies) {
-			float distanceToEnemy = Vector3.Distance (this.transform.position, enemy.transform.position);
-			if (distanceToEnemy < smallestDistance) {
-				result = enemy;
-				smallestDistance = Vector3.Distance (this.transform.position, enemy.transform.position);
+			if (enemy != null) {
+				distanceToEnemy = Vector3.Distance (this.transform.position, enemy.transform.position);
+				if (distanceToEnemy < smallestDistance) {
+					result = enemy;
+					smallestDistance = Vector3.Distance (this.transform.position, enemy.transform.position);
+				}
 			}
 		}
 		return result;
@@ -64,15 +75,19 @@ public class Weapon : MonoBehaviour {
 
 	void Shoot(GameObject enemy) {
 		if (FireProjectileEffect != null) {
-			var effect = (GameObject) Instantiate (FireProjectileEffect, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
+			if (TakeDamageEnemyEffect != null) {
+				effect = (GameObject) Instantiate (TakeDamageEnemyEffect, enemy.transform.position, enemy.transform.rotation);
+				effect.transform.parent = transform;
+			}
+			effect = (GameObject) Instantiate (FireProjectileEffect, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
 			effect.transform.parent = transform;
 		}
 
-		Transform bullet = (Transform) Instantiate (BulletPrefab, this.transform.position, this.transform.rotation);
-		BulletLogic b = bullet.GetComponent<BulletLogic> ();
-		b.target = enemy;
+		bullet = (Transform)Instantiate (BulletPrefab, this.transform.position, this.transform.rotation);
+		bulletLogicScript = bullet.GetComponent<BulletLogic> ();
+		bulletLogicScript.target = enemy;
 
-		/*Sons para accoes do jogador*/
+		/*Tower shoot sound*/
 		AudioSource.PlayClipAtPoint (TowerShootSound, transform.position);
 	}
 }
