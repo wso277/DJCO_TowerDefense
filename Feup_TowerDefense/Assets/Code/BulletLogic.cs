@@ -27,8 +27,10 @@ public class BulletLogic : MonoBehaviour {
 
 			if (distanceToEnemy < 0.1) {
 				enemyLifeScript = target.GetComponent<EnemyLife> ();
-				enemyLifeScript.TakeDamage (1);
-				Destroy (gameObject);
+                
+				enemyLifeScript.TakeDamage(1);
+				
+                Destroy (gameObject);
 			}
 		}
 	}
