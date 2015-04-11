@@ -3813,7 +3813,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51687a60fdcf04f69a66c7f5a5f79199, type: 3}
+  m_Sprite: {fileID: 21300010, guid: 9b92223e01b86274bb972473d8c3e2e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &922575061
 Transform:
@@ -3822,8 +3822,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 922575059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.16454601, y: .803195477, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.71000004, y: -.100000001, z: 0}
+  m_LocalScale: {x: .600000024, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 1604328527}
   m_RootOrder: 0
@@ -3854,21 +3854,14 @@ MonoBehaviour:
   fireRate: 1
   damage: 10
   range: 10
-  whatToIt:
-    serializedVersion: 2
-    m_Bits: 1024
-  BulletTrailPrefab: {fileID: 0}
-  MuzzleFlashPrefab: {fileID: 0}
+  ProjectileFireLocation: {fileID: 922575061}
+  BulletPrefab: {fileID: 418272, guid: b4e0fac12520f4b98a1c815550479153, type: 2}
+  bullet: {fileID: 0}
   FireProjectileEffect: {fileID: 174938, guid: 1597a80fe98f248838ea88e2364851a1, type: 2}
   TakeDamageEnemyEffect: {fileID: 123202, guid: 3e30af52021734424be682981faea215,
     type: 2}
-  ProjectileFireLocation: {fileID: 922575061}
   TowerShootSound: {fileID: 8300000, guid: 741ad33a9ab0d4103a4f60900953ba7e, type: 3}
-  enemyLifeScript: {fileID: 0}
-  towerCollider: {fileID: 0}
-  enemyCollider: {fileID: 0}
-  effectSpawnRate: 0
-  BulletPrefab: {fileID: 418272, guid: b4e0fac12520f4b98a1c815550479153, type: 2}
+  bulletLogicScript: {fileID: 0}
 --- !u!114 &922575064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6789,12 +6782,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 418272, guid: b4e0fac12520f4b98a1c815550479153, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 21254590, guid: b4e0fac12520f4b98a1c815550479153, type: 2}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 21254590, guid: b4e0fac12520f4b98a1c815550479153, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d1ef9fbd0c7aaa942b83dbf8804c8a1a,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b4e0fac12520f4b98a1c815550479153, type: 2}
   m_IsPrefabParent: 0

@@ -19,6 +19,9 @@ public class TowerLife : MonoBehaviour {
 	}
 	
 	public void TakeDamage(int amount) {
+        
+        GameObject effect = (GameObject) Instantiate (this.gameObject.GetComponent<Weapon>().FireProjectileEffect, this.gameObject.GetComponent<Weapon>().ProjectileFireLocation.position, this.gameObject.GetComponent<Weapon>().ProjectileFireLocation.rotation);
+		effect.transform.parent = transform;
 		currentLifePoints -= amount;
 	}
 }

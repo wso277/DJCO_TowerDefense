@@ -79,8 +79,8 @@ public class Weapon : MonoBehaviour {
 				effect = (GameObject) Instantiate (TakeDamageEnemyEffect, enemy.transform.position, enemy.transform.rotation);
 				effect.transform.parent = transform;
 			}
-			effect = (GameObject) Instantiate (FireProjectileEffect, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
-			effect.transform.parent = transform;
+			/*effect = (GameObject) Instantiate (FireProjectileEffect, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
+			effect.transform.parent = transform;*/
 		}
 
 		bullet = (Transform)Instantiate (BulletPrefab, this.transform.position, this.transform.rotation);

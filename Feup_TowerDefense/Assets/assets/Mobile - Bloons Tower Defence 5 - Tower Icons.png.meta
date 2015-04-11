@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 9b92223e01b86274bb972473d8c3e2e4
+timeCreated: 1428759429
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Mobile - Bloons Tower Defence 5 - Tower Icons_0
+    21300002: Mobile - Bloons Tower Defence 5 - Tower Icons_1
+    21300004: Mobile - Bloons Tower Defence 5 - Tower Icons_2
+    21300006: Mobile - Bloons Tower Defence 5 - Tower Icons_3
+    21300008: Mobile - Bloons Tower Defence 5 - Tower Icons_4
+    21300010: tower1Sprite
+    21300012: Mobile - Bloons Tower Defence 5 - Tower Icons_6
+    21300014: Mobile - Bloons Tower Defence 5 - Tower Icons_7
+    21300016: Mobile - Bloons Tower Defence 5 - Tower Icons_8
+    21300018: Mobile - Bloons Tower Defence 5 - Tower Icons_9
+    21300020: Mobile - Bloons Tower Defence 5 - Tower Icons_10
+    21300022: Mobile - Bloons Tower Defence 5 - Tower Icons_11
+    21300024: Mobile - Bloons Tower Defence 5 - Tower Icons_12
+    21300026: Mobile - Bloons Tower Defence 5 - Tower Icons_13
+    21300028: Mobile - Bloons Tower Defence 5 - Tower Icons_14
+    21300030: Mobile - Bloons Tower Defence 5 - Tower Icons_15
+    21300032: Mobile - Bloons Tower Defence 5 - Tower Icons_16
+    21300034: Mobile - Bloons Tower Defence 5 - Tower Icons_17
+    21300036: Mobile - Bloons Tower Defence 5 - Tower Icons_18
+    21300038: Mobile - Bloons Tower Defence 5 - Tower Icons_19
+    21300040: Mobile - Bloons Tower Defence 5 - Tower Icons_20
+    21300042: Mobile - Bloons Tower Defence 5 - Tower Icons_21
+    21300044: Mobile - Bloons Tower Defence 5 - Tower Icons_22
+    21300046: Mobile - Bloons Tower Defence 5 - Tower Icons_23
+    21300048: Mobile - Bloons Tower Defence 5 - Tower Icons_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_0
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 664
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_1
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 522
+        width: 447
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_2
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 654
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_3
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 649
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_4
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 635
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tower1Sprite
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 372
+        width: 144
+        height: 150
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_6
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 88
+        width: 102
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_7
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 139
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_8
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 173
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_9
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 138
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_10
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 139
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_11
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 139
+        width: 11
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_12
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 134
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_13
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 134
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_14
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 138
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_15
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 134
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_16
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 75
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_17
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 75
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_18
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 75
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_19
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 71
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_20
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 110
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_21
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 76
+        width: 11
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_22
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 75
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_23
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 75
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mobile - Bloons Tower Defence 5 - Tower Icons_24
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 610
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
