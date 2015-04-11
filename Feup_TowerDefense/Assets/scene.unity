@@ -3860,6 +3860,7 @@ MonoBehaviour:
   FireProjectileEffect: {fileID: 174938, guid: 1597a80fe98f248838ea88e2364851a1, type: 2}
   TakeDamageEnemyEffect: {fileID: 123202, guid: 3e30af52021734424be682981faea215,
     type: 2}
+  effect: {fileID: 0}
   TowerShootSound: {fileID: 8300000, guid: 741ad33a9ab0d4103a4f60900953ba7e, type: 3}
   bulletLogicScript: {fileID: 0}
 --- !u!114 &922575064
