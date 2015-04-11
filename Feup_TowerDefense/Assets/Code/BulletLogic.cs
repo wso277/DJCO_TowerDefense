@@ -27,6 +27,7 @@ public class BulletLogic : MonoBehaviour {
 			relative = target.transform.position - transform.position;
 			distanceToEnemy = relative.magnitude;
 
+			// If it has reached its target then display the take damage effect, decrease the enemy's life and destroy the bullet
 			if (distanceToEnemy < 0.1) {
 				enemyLifeScript = target.GetComponent<EnemyLife> ();
                 if (tower.GetComponent<Weapon>().TakeDamageEnemyEffect != null)

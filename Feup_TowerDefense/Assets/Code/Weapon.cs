@@ -26,18 +26,13 @@ public class Weapon : MonoBehaviour {
 	private Collider2D enemyCollider;
 
 	public BulletLogic bulletLogicScript;
-	
-	//Transform firePoint;
+
 
 	void Start() {
 		towerCollider = this.GetComponent<Collider2D> ();
 	}
 
 	void Awake () {
-		/*firePoint = transform.FindChild ("FirePoint");
-		if(firePoint == null) {
-			Debug.LogError ("No FirePoint ? What?!");
-		}*/
 	}
 
 	// Update is called once per frame
@@ -56,6 +51,7 @@ public class Weapon : MonoBehaviour {
 		}
 	}
 
+	// Returns the closest enemy to the tower
 	GameObject GetClosestEnemy () {
 
 		float smallestDistance = float.PositiveInfinity;
@@ -74,16 +70,8 @@ public class Weapon : MonoBehaviour {
 		return result;
 	}
 
+	// Shoots at the closest enemy
 	void Shoot(GameObject enemy) {
-		if (FireProjectileEffect != null) {
-			/*if (TakeDamageEnemyEffect != null) {
-				effect = (GameObject) Instantiate (TakeDamageEnemyEffect, enemy.transform.position, enemy.transform.rotation);
-				effect.transform.parent = transform;
-			}*/
-			/*effect = (GameObject) Instantiate (FireProjectileEffect, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
-			effect.transform.parent = transform;*/
-		}
-
 		bullet = (Transform)Instantiate (BulletPrefab, this.transform.position, this.transform.rotation);
 		bulletLogicScript = bullet.GetComponent<BulletLogic> ();
 		bulletLogicScript.target = enemy;

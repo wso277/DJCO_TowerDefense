@@ -9,8 +9,11 @@ public class GameLogic : MonoBehaviour {
 	public int currentLifePoints;
 	public int totalLifePoints = 100;
 	public int score = 0;
+
 	public Image healthBar;
+
 	public GameObject[] enemies;
+
     public float timescale = 0;
 
 	// Use this for initialization

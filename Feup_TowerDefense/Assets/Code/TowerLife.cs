@@ -13,15 +13,16 @@ public class TowerLife : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (currentLifePoints <= 0) {
-			Destroy(gameObject);
-		}
 	}
 	
 	public void TakeDamage(int amount) {
-        
         GameObject effect = (GameObject) Instantiate (this.gameObject.GetComponent<Weapon>().FireProjectileEffect, this.gameObject.GetComponent<Weapon>().ProjectileFireLocation.position, this.gameObject.GetComponent<Weapon>().ProjectileFireLocation.rotation);
 		effect.transform.parent = transform;
 		currentLifePoints -= amount;
+
+		
+		if (currentLifePoints <= 0) {
+			Destroy(gameObject);
+		}
 	}
 }

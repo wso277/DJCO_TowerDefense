@@ -53,9 +53,7 @@
      <Compile Include="Assets\Code\EnemyLife.cs" />
      <Compile Include="Assets\Code\GameLogic.cs" />
      <Compile Include="Assets\Code\HUD.cs" />
-     <Compile Include="Assets\Code\HealthBar.cs" />
      <Compile Include="Assets\Code\MovementScript.cs" />
-     <Compile Include="Assets\Code\Projectile.cs" />
      <Compile Include="Assets\Code\Spawner.cs" />
      <Compile Include="Assets\Code\Tower.cs" />
      <Compile Include="Assets\Code\TowerLife.cs" />
