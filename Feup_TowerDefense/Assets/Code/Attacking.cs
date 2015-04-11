@@ -60,6 +60,7 @@ public class Attacking : MonoBehaviour {
 			//moblinMovScript.movementSpeed = 10;
 			StartCoroutine(StayAndAttack(collider));
         }
+
     }
 
 	
