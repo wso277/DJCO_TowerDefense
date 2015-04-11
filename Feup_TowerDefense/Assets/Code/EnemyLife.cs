@@ -16,14 +16,10 @@ public class EnemyLife : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (currentLifePoints <= 0) {
-            Destroy(gameObject);
-        }*/
     }
 
     public void TakeDamage(int amount)
     {
-
         currentLifePoints -= amount;
 
         if (currentLifePoints <= 0)

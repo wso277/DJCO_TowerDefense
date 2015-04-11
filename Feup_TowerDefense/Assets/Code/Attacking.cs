@@ -3,34 +3,38 @@ using System.Collections;
 
 public class Attacking : MonoBehaviour {
 
-    public GameObject arrow;
-    public Animator anim;
-	private Rigidbody2D enemyRigidbody;
+	public GameObject arrow;
 	private GameObject newArrow;
+
+    public Animator anim;
+
 	private string currentTowerName;
+
 	private MovementScript moblinMovScript;
+
+	private Transform arrowTransform;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
-		enemyRigidbody = gameObject.GetComponent<Rigidbody2D> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	}
-
+	
 	void InstantiateArrow(Collider2D collider) {
-		GameObject newArrow = Instantiate(arrow) as GameObject;
-		Transform arrowTransform = newArrow.transform;
-		// Set the arrow position to be just in front of the moblin, according to the moblin and tower position
+		newArrow = Instantiate(arrow) as GameObject;
+		arrowTransform = newArrow.transform;
+		// Set the arrow position to be just in front of the moblin, according to the moblin and the tower position
 		arrowTransform.position = new Vector3(transform.position.x + (Mathf.Cos((collider.transform.position.x - transform.position.x))*0.5f), transform.position.y + (Mathf.Sin((collider.transform.position.y - transform.position.y))*0.2f), transform.position.z);
 		// Set the path the arrow has to follow
 		ArrowMovement movScript = newArrow.GetComponent("ArrowMovement") as ArrowMovement;
 		movScript.pathName = collider.gameObject.name;
 		movScript.active = true;
 	}
-	
+
+	// Repeatedly attacks the tower with whom he has collided
 	IEnumerator StayAndAttack(Collider2D collider) {
 		if (currentTowerName != "") {
 			if (GameObject.Find (currentTowerName) != null) {
@@ -57,7 +61,7 @@ public class Attacking : MonoBehaviour {
             moblinMovScript = gameObject.GetComponent("MovementScript") as MovementScript;
             moblinMovScript.movementSpeed = 2f;
 			InstantiateArrow(collider);
-			//moblinMovScript.movementSpeed = 10;
+			// Make it so that the enemy starts focusing the tower and shooting at it repeatedly
 			StartCoroutine(StayAndAttack(collider));
         }
 
