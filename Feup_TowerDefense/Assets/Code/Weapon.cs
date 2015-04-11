@@ -15,7 +15,7 @@ public class Weapon : MonoBehaviour {
 	
 	public GameObject FireProjectileEffect;
 	public GameObject TakeDamageEnemyEffect;
-	private GameObject effect;
+	public GameObject effect;
 	private GameObject closestEnemy;
 
 	private GameObject[] enemies;
@@ -75,10 +75,10 @@ public class Weapon : MonoBehaviour {
 
 	void Shoot(GameObject enemy) {
 		if (FireProjectileEffect != null) {
-			if (TakeDamageEnemyEffect != null) {
+			/*if (TakeDamageEnemyEffect != null) {
 				effect = (GameObject) Instantiate (TakeDamageEnemyEffect, enemy.transform.position, enemy.transform.rotation);
 				effect.transform.parent = transform;
-			}
+			}*/
 			/*effect = (GameObject) Instantiate (FireProjectileEffect, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
 			effect.transform.parent = transform;*/
 		}
@@ -86,6 +86,7 @@ public class Weapon : MonoBehaviour {
 		bullet = (Transform)Instantiate (BulletPrefab, this.transform.position, this.transform.rotation);
 		bulletLogicScript = bullet.GetComponent<BulletLogic> ();
 		bulletLogicScript.target = enemy;
+        bulletLogicScript.tower = this.gameObject;
 
 		/*Tower shoot sound*/
 		AudioSource.PlayClipAtPoint (TowerShootSound, transform.position);

@@ -4,6 +4,7 @@ using System.Collections;
 public class BulletLogic : MonoBehaviour {
 
 	public GameObject target;
+    public GameObject tower;
 
 	public float speed = 1000.5f;
 	public float distanceToEnemy;
@@ -27,7 +28,12 @@ public class BulletLogic : MonoBehaviour {
 
 			if (distanceToEnemy < 0.1) {
 				enemyLifeScript = target.GetComponent<EnemyLife> ();
-                
+                if (tower.GetComponent<Weapon>().TakeDamageEnemyEffect != null)
+                {
+                    tower.GetComponent<Weapon>().effect = (GameObject)Instantiate(tower.GetComponent<Weapon>().TakeDamageEnemyEffect, target.transform.position, target.transform.rotation);
+                    tower.GetComponent<Weapon>().effect.transform.parent = tower.transform;
+                }
+
 				enemyLifeScript.TakeDamage(1);
 				
                 Destroy (gameObject);
