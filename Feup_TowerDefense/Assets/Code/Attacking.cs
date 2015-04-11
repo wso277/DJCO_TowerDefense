@@ -39,6 +39,7 @@ public class Attacking : MonoBehaviour {
 				yield return new WaitForSeconds(1f);
 				StartCoroutine(StayAndAttack(collider));
 			} else {
+                anim.Play("bowMoblinWalk");
 				moblinMovScript.movementSpeed = 10;
 			}
 		}
@@ -54,10 +55,10 @@ public class Attacking : MonoBehaviour {
 			//change animation to attack the tower
             anim.Play("bowMoblinAttack");
             moblinMovScript = gameObject.GetComponent("MovementScript") as MovementScript;
-            moblinMovScript.movementSpeed = 0f;
+            moblinMovScript.movementSpeed = 2f;
 			InstantiateArrow(collider);
-			moblinMovScript.movementSpeed = 10;
-			//StartCoroutine(StayAndAttack(collider));
+			//moblinMovScript.movementSpeed = 10;
+			StartCoroutine(StayAndAttack(collider));
         }
     }
 
