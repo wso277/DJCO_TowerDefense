@@ -11,6 +11,7 @@ public class GameLogic : MonoBehaviour {
 	public int score = 0;
 	public Image healthBar;
 	public GameObject[] enemies;
+    public float timescale = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -23,8 +24,22 @@ public class GameLogic : MonoBehaviour {
 	void Update () {	
 		enemies = GameObject.FindGameObjectsWithTag("Enemy");
 		if (currentLifePoints <= 0) {
-			Application.LoadLevel(Application.loadedLevel);
+            Application.LoadLevel("gameOver");
 		}
+        if (Input.GetButtonDown("Exit"))
+        {
+            Application.Quit();
+        }
+        if (Input.GetButtonDown("Restart"))
+        {
+            Application.LoadLevel("scene");
+        }
+        if (Input.GetButtonDown("Pause"))
+        {
+            float tmp = Time.timeScale;
+            Time.timeScale = timescale;
+            timescale = tmp;
+        }
 
 	}
 
