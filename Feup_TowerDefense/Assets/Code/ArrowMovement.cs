@@ -7,7 +7,7 @@ public class ArrowMovement : MonoBehaviour {
 	
 	public float movementSpeed = 3f;
 
-	public string pathName = "tower1";
+	public string pathName = "Tower1";
 
 	public bool active = true;
 
