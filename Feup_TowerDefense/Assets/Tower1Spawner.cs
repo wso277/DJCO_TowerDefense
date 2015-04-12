@@ -3,10 +3,12 @@ using System.Collections;
 
 public class Tower1Spawner : MonoBehaviour
 {
-
     private Vector3 mousePosition;
+
     public float moveSpeed = 1f;
+
     public Transform TowerPrefab;
+
 	private GameLogic logicScript;
 
     Ray ray;
