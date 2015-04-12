@@ -8,7 +8,7 @@ public class GameLogic : MonoBehaviour {
 
 	public int currentLifePoints;
 	public int totalLifePoints = 100;
-	public int score = 0;
+	public int currentTower = 2;
 
 	public Image healthBar;
 

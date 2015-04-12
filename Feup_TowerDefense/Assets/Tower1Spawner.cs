@@ -4,12 +4,17 @@ using System.Collections;
 public class Tower1Spawner : MonoBehaviour {
 
 	private Vector3 mousePosition;
+
 	public float moveSpeed = 1f;
-	public Transform TowerPrefab;
+
+	public Transform towerPrefab;
+	private Transform tower;
+
+	private GameLogic logicScript;
 
 	// Use this for initialization
 	void Start () {
-	
+		logicScript = GameObject.Find("GameLogic").GetComponent<GameLogic>();
 	}
 	
 	// Update is called once per frame
@@ -38,11 +43,10 @@ public class Tower1Spawner : MonoBehaviour {
 			   && mousePosition.y <= GameObject.Find("TowerZoneP4").transform.position.y
 			   && mousePosition.y >= GameObject.Find("TowerZoneP5").transform.position.y
 			   ){
-				Transform tower = (Transform)Instantiate (TowerPrefab, this.transform.position, this.transform.rotation);
-				//Debug.Log ("x: " + mousePosition.x + " y: " + mousePosition.y + " z: " + mousePosition.z);
-				//Debug.Log ("x: " + GameObject.Find("TowerZone").transform.position.x + " y: " + GameObject.Find("TowerZone").transform.position.y + " z: " + GameObject.Find("TowerZone").transform.position.z);
-				//Instantiate (TowerPrefab, this.transform.position, this.transform.rotation);
+				tower = (Transform)Instantiate (towerPrefab, this.transform.position, this.transform.rotation);
 				tower.parent = GameObject.Find("Towers").transform;
+				logicScript.currentTower++;
+				tower.gameObject.name = "Tower" + "" + logicScript.currentTower;
 				Destroy(gameObject);}
 		}
 	}
