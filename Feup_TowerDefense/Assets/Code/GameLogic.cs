@@ -15,7 +15,11 @@ public class GameLogic : MonoBehaviour {
 
 	public GameObject[] enemies;
 
-	public int score = 1000;
+	private int score = 1000;
+	public int Score{
+		get {return score;} 
+		set { score = value; }
+	}
     public float timescale = 0;
 
 	public Spawner spawner;

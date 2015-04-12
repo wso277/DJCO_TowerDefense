@@ -39,7 +39,7 @@ public class Winner : MonoBehaviour {
 		GUI.contentColor = Color.gray;
 		GUI.Label(winTextArea, winText, style);
 		
-		scoreText = "Your score is: " + logicScript.score.ToString();
+		scoreText = "Your score is: " + logicScript.Score.ToString();
 		
 		GUI.Label(scoreTextArea, scoreText, scorestyle);
 	}
