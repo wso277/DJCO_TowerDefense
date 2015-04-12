@@ -15,6 +15,7 @@ public class GameLogic : MonoBehaviour {
 
 	public GameObject[] enemies;
 
+	public int score = 1000;
     public float timescale = 0;
 
 	// Use this for initialization
@@ -45,6 +46,9 @@ public class GameLogic : MonoBehaviour {
             Time.timeScale = timescale;
             timescale = tmp;
         }
+		if (enemies.Length == 0 && currentLifePoints > 0) {
+			score = score + (currentLifePoints * 5) - (currentTower * 50);
+		}
 
 	}
 
