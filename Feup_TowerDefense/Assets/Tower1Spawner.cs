@@ -45,6 +45,7 @@ public class Tower1Spawner : MonoBehaviour
 					tower.parent = GameObject.Find("Towers").transform;
                 	tower.GetComponent<TowerLife>().coll = hit.collider.gameObject.GetComponent<Collider2D>();
 					logicScript.currentTower++;
+					logicScript.towerCharges--;
 					tower.gameObject.name = "Tower" + "" + logicScript.currentTower;
 					Destroy(gameObject);
 				}
