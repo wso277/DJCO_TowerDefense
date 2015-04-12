@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9c2c644b6604a929f6f960ed9ca553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 1
+  fireRate: 1.5
   damage: 10
   range: 10
   ProjectileFireLocation: {fileID: 483478}
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLifePoints: 0
-  totalLifePoints: 12
+  totalLifePoints: 15
   coll: {fileID: 0}
 --- !u!212 &21243970
 SpriteRenderer:

@@ -33,21 +33,18 @@ public class Spawner : MonoBehaviour
 
     IEnumerator TimeDecreaser(float timeUntilStart)  
     {
-        if (spawnTime > 1f)
-        {
-            yield return new WaitForSeconds(timeUntilStart);
-            if (endSpawnTime < 15)
-            {
-                endSpawnTime += 0.5f;
-            }
-            spawnTime -= 0.5f;
-            if (sleepBetweenSpawn > 1f)
-            {
-                sleepBetweenSpawn -= 0.75f;
-            }
-			logicScript.towerCharges += 1 + (int)((int)(10-spawnTime)*0.5);
-            StartCoroutine(TimeDecreaser(spawnTime));
-        }
+        if (spawnTime > 1f) {
+			yield return new WaitForSeconds (timeUntilStart);
+			if (endSpawnTime < 15) {
+				endSpawnTime += 0.5f;
+			}
+			spawnTime -= 0.5f;
+			if (sleepBetweenSpawn > 1f) {
+				sleepBetweenSpawn -= 0.75f;
+			}
+			logicScript.towerCharges += 1 + (int)((int)(10 - spawnTime) * 0.5);
+			StartCoroutine (TimeDecreaser (spawnTime));
+		}
     }
 
 	// This function is invoked after timeUntilStart seconds, and it spawns a wave of enemies, where the enemy type is specified via the spawner function
