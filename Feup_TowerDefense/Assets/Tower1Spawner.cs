@@ -8,7 +8,6 @@ public class Tower1Spawner : MonoBehaviour {
 	public float moveSpeed = 1f;
 
 	public Transform towerPrefab;
-	private Transform tower;
 
 	private GameLogic logicScript;
 
@@ -43,7 +42,10 @@ public class Tower1Spawner : MonoBehaviour {
 			   && mousePosition.y <= GameObject.Find("TowerZoneP4").transform.position.y
 			   && mousePosition.y >= GameObject.Find("TowerZoneP5").transform.position.y
 			   ){
-				tower = (Transform)Instantiate (towerPrefab, this.transform.position, this.transform.rotation);
+				Transform tower = (Transform)Instantiate (towerPrefab, this.transform.position, this.transform.rotation);
+				//Debug.Log ("x: " + mousePosition.x + " y: " + mousePosition.y + " z: " + mousePosition.z);
+				//Debug.Log ("x: " + GameObject.Find("TowerZone").transform.position.x + " y: " + GameObject.Find("TowerZone").transform.position.y + " z: " + GameObject.Find("TowerZone").transform.position.z);
+				//Instantiate (TowerPrefab, this.transform.position, this.transform.rotation);
 				tower.parent = GameObject.Find("Towers").transform;
 				logicScript.currentTower++;
 				tower.gameObject.name = "Tower" + "" + logicScript.currentTower;
