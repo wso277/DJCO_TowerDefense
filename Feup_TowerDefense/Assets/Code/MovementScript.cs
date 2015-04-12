@@ -10,6 +10,7 @@ public class MovementScript : MonoBehaviour {
     public string pathName = "Waypoints";
 	public bool active = true;
 	private GameLogic logicScript;
+    public bool rotate = true;
 	
 	// Use this for initialization
 	void Start () 
@@ -38,7 +39,9 @@ public class MovementScript : MonoBehaviour {
 		Vector3 relative = targetWaypoint.position - transform.position;
 		Vector3 movementNormal = Vector3.Normalize(relative);
 		float distanceToWaypoint = relative.magnitude;
-		float targetAngle = Mathf.Atan2(relative.y, relative.x) * Mathf.Rad2Deg - 90;
+        float targetAngle = 0;
+        if (rotate)
+		    targetAngle = Mathf.Atan2(relative.y, relative.x) * Mathf.Rad2Deg - 90;
 		
 		if (distanceToWaypoint < 0.1)
 		{
@@ -62,6 +65,7 @@ public class MovementScript : MonoBehaviour {
 		}
 		
 		// Face walk direction
-		transform.rotation = Quaternion.Euler(0, 0, targetAngle);
+        if (rotate)
+		    transform.rotation = Quaternion.Euler(0, 0, targetAngle);
 	}
 }
