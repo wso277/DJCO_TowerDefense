@@ -31,7 +31,7 @@ public class Spawner : MonoBehaviour
     {
     }
 
-    IEnumerator TimeDecreaser(float timeUntilStart)
+    IEnumerator TimeDecreaser(float timeUntilStart)  
     {
         if (spawnTime > 1f)
         {
