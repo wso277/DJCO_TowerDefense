@@ -41,7 +41,8 @@ public class Tower1Spawner : MonoBehaviour {
 				Transform tower = (Transform)Instantiate (TowerPrefab, this.transform.position, this.transform.rotation);
 				//Debug.Log ("x: " + mousePosition.x + " y: " + mousePosition.y + " z: " + mousePosition.z);
 				//Debug.Log ("x: " + GameObject.Find("TowerZone").transform.position.x + " y: " + GameObject.Find("TowerZone").transform.position.y + " z: " + GameObject.Find("TowerZone").transform.position.z);
-				Instantiate (TowerPrefab, this.transform.position, this.transform.rotation);
+				//Instantiate (TowerPrefab, this.transform.position, this.transform.rotation);
+				tower.parent = GameObject.Find("Towers").transform;
 				Destroy(gameObject);}
 		}
 	}
