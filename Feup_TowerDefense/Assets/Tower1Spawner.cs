@@ -36,16 +36,19 @@ public class Tower1Spawner : MonoBehaviour
             hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity, LayerMask.GetMask("Zone"));
             if (hit.collider != null && hit.collider.gameObject.transform.parent.name == "TowerZone")
             {
-                hit.collider.gameObject.GetComponent<Collider2D>().enabled = false;
-                hit.collider.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+				if (logicScript.towerCharges >= 1) {
+                	hit.collider.gameObject.GetComponent<Collider2D>().enabled = false;
+                	hit.collider.gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 
-				Transform tower = (Transform)Instantiate (TowerPrefab, this.transform.position, this.transform.rotation);
+					Transform tower = (Transform)Instantiate (TowerPrefab, this.transform.position, this.transform.rotation);
 
-				tower.parent = GameObject.Find("Towers").transform;
-                tower.GetComponent<TowerLife>().coll = hit.collider.gameObject.GetComponent<Collider2D>();
-				logicScript.currentTower++;
-				tower.gameObject.name = "Tower" + "" + logicScript.currentTower;
-				Destroy(gameObject);}
-            }
+					tower.parent = GameObject.Find("Towers").transform;
+                	tower.GetComponent<TowerLife>().coll = hit.collider.gameObject.GetComponent<Collider2D>();
+					logicScript.currentTower++;
+					tower.gameObject.name = "Tower" + "" + logicScript.currentTower;
+					Destroy(gameObject);
+				}
+	        }
 		}
+	}
 }
