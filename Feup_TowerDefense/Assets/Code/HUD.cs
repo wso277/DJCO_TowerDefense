@@ -3,16 +3,15 @@ using System.Collections;
 
 public class HUD : MonoBehaviour
 {
-
-    // Use this for initialization
-
     private GameLogic logicScript;
-    private Rect healthTextArea;
-    private string healthText;
-    private GUIStyle style;
 
-    private Rect chargeTextArea;
-    private string chargeText;
+	private Rect healthTextArea;
+	private Rect chargeTextArea;
+
+	private string healthText;
+	private string chargeText;
+
+    private GUIStyle style;
     private GUIStyle chargestyle;
 
     void Start()
@@ -21,10 +20,10 @@ public class HUD : MonoBehaviour
         healthTextArea = new Rect(30, 30, Screen.width, Screen.height);
         style = new GUIStyle();
         style.fontSize = 20;
-        chargeTextArea = new Rect(700, 20, Screen.width, Screen.height);
+        chargeTextArea = new Rect(1070, 7, Screen.width, Screen.height);
         chargestyle = new GUIStyle();
-        chargestyle.fontSize = 20;
-        chargestyle.normal.textColor = Color.red;
+        chargestyle.fontSize = 30;
+        chargestyle.normal.textColor = Color.green;
     }
 
     // Update is called once per frame
