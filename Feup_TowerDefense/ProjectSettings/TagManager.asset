@@ -20,7 +20,7 @@ TagManager:
   - Pop Up
   - EnemyBridge
   - Bridge
-  - 
+  - Zone
   - 
   - 
   - 
@@ -56,4 +56,7 @@ TagManager:
     locked: 0
   - name: Pop Up
     uniqueID: 2837958795
+    locked: 0
+  - name: Zone
+    uniqueID: 3699156087
     locked: 0

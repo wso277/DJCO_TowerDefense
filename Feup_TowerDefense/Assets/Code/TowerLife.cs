@@ -5,6 +5,7 @@ public class TowerLife : MonoBehaviour {
 
 	public int currentLifePoints;
 	public int totalLifePoints = 10;
+    public Collider2D coll;
 	
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,8 @@ public class TowerLife : MonoBehaviour {
 
 		
 		if (currentLifePoints <= 0) {
+            coll.enabled = true;
+            coll.gameObject.GetComponent<SpriteRenderer>().enabled = true;
 			Destroy(gameObject);
 		}
 	}
