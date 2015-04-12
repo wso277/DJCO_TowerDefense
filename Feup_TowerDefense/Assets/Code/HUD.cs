@@ -20,7 +20,7 @@ public class HUD : MonoBehaviour
         healthTextArea = new Rect(30, 30, Screen.width, Screen.height);
         style = new GUIStyle();
         style.fontSize = 20;
-        chargeTextArea = new Rect(1070, 7, Screen.width, Screen.height);
+        chargeTextArea = new Rect(Screen.width*0.96f, 7, Screen.width, Screen.height);
         chargestyle = new GUIStyle();
         chargestyle.fontSize = 30;
         chargestyle.normal.textColor = Color.green;

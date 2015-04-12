@@ -18,6 +18,8 @@ public class GameLogic : MonoBehaviour {
 	public int score = 1000;
     public float timescale = 0;
 
+	public Spawner spawner;
+
 	// Use this for initialization
 	void Start () {
 		currentLifePoints = totalLifePoints;
@@ -50,6 +52,10 @@ public class GameLogic : MonoBehaviour {
 			score = score + (currentLifePoints * 5) - (currentTower * 50);
 		}
 
+		// Win condition
+		if (enemies.Length == 3 && currentLifePoints > 0 && spawner.spawnTime == 1f) {
+			// Load win level
+		}
 	}
 
 	public void TakeDamage(int amount) {
