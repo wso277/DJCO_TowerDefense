@@ -5,11 +5,15 @@ public class Spawner : MonoBehaviour
 {
 
 	public GameObject bowMoblinEnemy1, bowMoblinEnemy2, spearMoblinEnemy;
+
     public float spawnTime = 10f;
     public float sleepBetweenSpawn = 3f;
     public float endSpawnTime = 10f;
 	public float sleepBetweenEachEnemy = 0.2f;
+
     public delegate void Spawn();
+
+	public GameLogic logicScript;
 
     // Use this for initialization
     void Start()
@@ -40,6 +44,7 @@ public class Spawner : MonoBehaviour
             {
                 sleepBetweenSpawn -= 0.75f;
             }
+			logicScript.towerCharges += 1 + (int) (10-spawnTime)*1;
             StartCoroutine(TimeDecreaser(spawnTime));
         }
     }

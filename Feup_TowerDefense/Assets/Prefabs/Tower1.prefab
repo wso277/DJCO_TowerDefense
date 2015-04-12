@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLifePoints: 0
-  totalLifePoints: 10
+  totalLifePoints: 15
 --- !u!212 &21243970
 SpriteRenderer:
   m_ObjectHideFlags: 1
