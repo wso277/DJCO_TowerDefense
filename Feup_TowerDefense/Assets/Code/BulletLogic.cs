@@ -30,10 +30,17 @@ public class BulletLogic : MonoBehaviour {
 			// If it has reached its target then display the take damage effect, decrease the enemy's life and destroy the bullet
 			if (distanceToEnemy < 0.1) {
 				enemyLifeScript = target.GetComponent<EnemyLife> ();
-                if (tower != null && tower.GetComponent<Weapon>().TakeDamageEnemyEffect != null)
+				if (tower != null && (tower.GetComponent<Weapon>().TakeDamageEnemyEffect != null || tower.GetComponent<MultiShotWeapon>().TakeDamageEnemyEffect != null))
                 {
-                    tower.GetComponent<Weapon>().effect = (GameObject)Instantiate(tower.GetComponent<Weapon>().TakeDamageEnemyEffect, target.transform.position, target.transform.rotation);
-                    tower.GetComponent<Weapon>().effect.transform.parent = tower.transform;
+					Weapon weapon;
+					if(tower.GetComponent<Weapon>().TakeDamageEnemyEffect != null) {
+						weapon = tower.GetComponent<Weapon>();
+					}
+					else
+						weapon = tower.GetComponent<MultiShotWeapon>();
+
+                    weapon.effect = (GameObject)Instantiate(weapon.TakeDamageEnemyEffect, target.transform.position, target.transform.rotation);
+                    weapon.effect.transform.parent = tower.transform;
                 }
 
 				enemyLifeScript.TakeDamage(1);

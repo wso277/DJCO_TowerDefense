@@ -25,7 +25,7 @@ public class Weapon : MonoBehaviour {
 	private Collider2D towerCollider;
 	private Collider2D enemyCollider;
 
-	public BulletLogic bulletLogicScript;
+	private BulletLogic bulletLogicScript;
 
 
 	void Start() {
@@ -37,7 +37,6 @@ public class Weapon : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
 		closestEnemy = GetClosestEnemy ();
 		if (closestEnemy != null && Time.time > timeToFire) {
 			timeToFire = Time.time + 1/fireRate;
