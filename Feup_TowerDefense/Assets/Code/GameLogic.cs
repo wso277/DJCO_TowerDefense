@@ -48,13 +48,11 @@ public class GameLogic : MonoBehaviour {
             Time.timeScale = timescale;
             timescale = tmp;
         }
-		if (enemies.Length == 0 && currentLifePoints > 0) {
-			score = score + (currentLifePoints * 5) - (currentTower * 50);
-		}
 
 		// Win condition
 		if (enemies.Length == 3 && currentLifePoints > 0 && spawner.spawnTime == 1f) {
-			// Load win level
+			score = score + (currentLifePoints * 5) - (currentTower * 50);
+			Application.LoadLevel("winScene");
 		}
 	}
 
