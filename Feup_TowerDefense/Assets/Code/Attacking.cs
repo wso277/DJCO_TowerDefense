@@ -30,6 +30,7 @@ public class Attacking : MonoBehaviour {
 			alreadyAttacking = false;
 			anim.Play("bowMoblinWalk");
 			moblinMovScript.movementSpeed = 10;
+            moblinMovScript.rotate = true;
 		}
 	}
 	
@@ -40,9 +41,10 @@ public class Attacking : MonoBehaviour {
 			// Set the arrow position to be just in front of the moblin, according to the moblin and the tower position
 			arrowTransform.position = new Vector3 (transform.position.x + (Mathf.Cos ((collider.transform.position.x - transform.position.x)) * 0.5f), transform.position.y + (Mathf.Sin ((collider.transform.position.y - transform.position.y)) * 0.2f), transform.position.z);
 			// Set the path the arrow has to follow
-			Vector3 relative = collider.transform.position - transform.position;
+			Vector3 relative = collider.gameObject.transform.position - transform.position;
 			float targetAngle = Mathf.Atan2 (relative.y, relative.x) * Mathf.Rad2Deg - 90;
 			transform.rotation = Quaternion.Euler (0, 0, targetAngle);
+            moblinMovScript.rotate = false;
 			ArrowMovement movScript = newArrow.GetComponent ("ArrowMovement") as ArrowMovement;
 			movScript.pathName = collider.gameObject.name;
 			movScript.active = true;

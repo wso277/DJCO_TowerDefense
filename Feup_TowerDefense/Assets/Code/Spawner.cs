@@ -31,7 +31,7 @@ public class Spawner : MonoBehaviour
     {
     }
 
-    IEnumerator TimeDecreaser(float timeUntilStart)
+    IEnumerator TimeDecreaser(float timeUntilStart)  
     {
         if (spawnTime > 1f)
         {
@@ -45,7 +45,7 @@ public class Spawner : MonoBehaviour
             {
                 sleepBetweenSpawn -= 0.75f;
             }
-			logicScript.towerCharges += 1 + (int) (10-spawnTime)*1;
+			logicScript.towerCharges += 1 + (int)((int)(10-spawnTime)*0.5);
             StartCoroutine(TimeDecreaser(spawnTime));
         }
     }
