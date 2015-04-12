@@ -384,6 +384,7 @@ MonoBehaviour:
   movementSpeed: 10
   pathName: Path1
   active: 0
+  rotate: 1
 --- !u!50 &130778660
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1302,6 +1303,7 @@ MonoBehaviour:
   movementSpeed: 10
   pathName: Path2
   active: 0
+  rotate: 1
 --- !u!212 &275702599
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3412,6 +3414,7 @@ MonoBehaviour:
   movementSpeed: 20
   pathName: Path3
   active: 0
+  rotate: 1
 --- !u!50 &789805379
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -5990,6 +5993,10 @@ Prefab:
     - target: {fileID: 483478, guid: 90c22145502f24283a89c46877da5121, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473422, guid: 90c22145502f24283a89c46877da5121, type: 2}
+      propertyPath: totalLifePoints
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90c22145502f24283a89c46877da5121, type: 2}
