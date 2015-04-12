@@ -18,6 +18,7 @@ public class Spawner : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+		logicScript = GameObject.Find ("GameLogic").GetComponent<GameLogic> ();
 		InitialWave();
         StartCoroutine(TimeDecreaser(spawnTime));
 		StartCoroutine(InvokeRepeatingRange(NewBowMoblinEnemy1, spawnTime, 0, endSpawnTime));

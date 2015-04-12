@@ -20,6 +20,7 @@ public class Attacking : MonoBehaviour {
 	void Start () {
         anim = GetComponent<Animator>();
 		alreadyAttacking = false;
+		moblinMovScript = gameObject.GetComponent("MovementScript") as MovementScript;
 	}
 	
 	// Update is called once per frame
@@ -33,17 +34,19 @@ public class Attacking : MonoBehaviour {
 	}
 	
 	void InstantiateArrow(Collider2D collider) {
-		newArrow = Instantiate(arrow) as GameObject;
-		arrowTransform = newArrow.transform;
-		// Set the arrow position to be just in front of the moblin, according to the moblin and the tower position
-		arrowTransform.position = new Vector3(transform.position.x + (Mathf.Cos((collider.transform.position.x - transform.position.x))*0.5f), transform.position.y + (Mathf.Sin((collider.transform.position.y - transform.position.y))*0.2f), transform.position.z);
-		// Set the path the arrow has to follow
-		Vector3 relative = collider.transform.position - transform.position;
-		float targetAngle = Mathf.Atan2(relative.y, relative.x) * Mathf.Rad2Deg - 90;
-		transform.rotation = Quaternion.Euler (0, 0, targetAngle);
-		ArrowMovement movScript = newArrow.GetComponent("ArrowMovement") as ArrowMovement;
-		movScript.pathName = collider.gameObject.name;
-		movScript.active = true;
+		if (collider != null) {
+			newArrow = Instantiate (arrow) as GameObject;
+			arrowTransform = newArrow.transform;
+			// Set the arrow position to be just in front of the moblin, according to the moblin and the tower position
+			arrowTransform.position = new Vector3 (transform.position.x + (Mathf.Cos ((collider.transform.position.x - transform.position.x)) * 0.5f), transform.position.y + (Mathf.Sin ((collider.transform.position.y - transform.position.y)) * 0.2f), transform.position.z);
+			// Set the path the arrow has to follow
+			Vector3 relative = collider.transform.position - transform.position;
+			float targetAngle = Mathf.Atan2 (relative.y, relative.x) * Mathf.Rad2Deg - 90;
+			transform.rotation = Quaternion.Euler (0, 0, targetAngle);
+			ArrowMovement movScript = newArrow.GetComponent ("ArrowMovement") as ArrowMovement;
+			movScript.pathName = collider.gameObject.name;
+			movScript.active = true;
+		}
 	}
 
 	// Repeatedly attacks the tower with whom he has collided
@@ -72,7 +75,6 @@ public class Attacking : MonoBehaviour {
 			currentTowerName = collider.gameObject.name;
 			//change animation to attack the tower
             anim.Play("bowMoblinAttack");
-            moblinMovScript = gameObject.GetComponent("MovementScript") as MovementScript;
             moblinMovScript.movementSpeed = 2f;
 			// Make it so that the enemy starts focusing the tower and shooting at it repeatedly
 			if (!alreadyAttacking) 
