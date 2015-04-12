@@ -12,9 +12,15 @@ public class Attacking : MonoBehaviour {
 
 	private MovementScript moblinMovScript;
 
+	private ArrowMovement movScript;
+
 	private Transform arrowTransform;
 
 	private bool alreadyAttacking;
+
+	private float targetAngle;
+
+	private Vector3 relative;
 
 	// Use this for initialization
 	void Start () {
@@ -41,13 +47,18 @@ public class Attacking : MonoBehaviour {
 			// Set the arrow position to be just in front of the moblin, according to the moblin and the tower position
 			arrowTransform.position = new Vector3 (transform.position.x + (Mathf.Cos ((collider.transform.position.x - transform.position.x)) * 0.5f), transform.position.y + (Mathf.Sin ((collider.transform.position.y - transform.position.y)) * 0.2f), transform.position.z);
 			// Set the path the arrow has to follow
-			Vector3 relative = collider.gameObject.transform.position - transform.position;
-			float targetAngle = Mathf.Atan2 (relative.y, relative.x) * Mathf.Rad2Deg - 90;
+			relative = collider.gameObject.transform.position - transform.position;
+			targetAngle = Mathf.Atan2 (relative.y, relative.x) * Mathf.Rad2Deg - 90;
 			transform.rotation = Quaternion.Euler (0, 0, targetAngle);
-            moblinMovScript.rotate = false;
-			ArrowMovement movScript = newArrow.GetComponent ("ArrowMovement") as ArrowMovement;
+			moblinMovScript.rotate = false;
+			movScript = newArrow.GetComponent ("ArrowMovement") as ArrowMovement;
 			movScript.pathName = collider.gameObject.name;
 			movScript.active = true;
+		} else {
+			anim.Play ("bowMoblinWalk");
+			moblinMovScript.movementSpeed = 10;
+			alreadyAttacking = false;
+			moblinMovScript.rotate = true;
 		}
 	}
 
@@ -56,15 +67,22 @@ public class Attacking : MonoBehaviour {
 		alreadyAttacking = true;
 		if (currentTowerName != "") {
 			if (GameObject.Find (currentTowerName) != null) {
-				anim.Play("bowMoblinAttack");
-				InstantiateArrow(collider);
-				yield return new WaitForSeconds(1f);
-				StartCoroutine(StayAndAttack(collider));
+				anim.Play ("bowMoblinAttack");
+				moblinMovScript.movementSpeed = 2;
+				InstantiateArrow (collider);
+				yield return new WaitForSeconds (1f);
+				StartCoroutine (StayAndAttack (collider));
 			} else {
-                anim.Play("bowMoblinWalk");
+				anim.Play ("bowMoblinWalk");
 				moblinMovScript.movementSpeed = 10;
 				alreadyAttacking = false;
+				moblinMovScript.rotate = true;
 			}
+		} else {
+			anim.Play ("bowMoblinWalk");
+			moblinMovScript.movementSpeed = 10;
+			alreadyAttacking = false;
+			moblinMovScript.rotate = true;
 		}
 	}
 
@@ -75,10 +93,6 @@ public class Attacking : MonoBehaviour {
         if (collider.transform.parent != null && collider.transform.parent.name == "Towers")
         {
 			currentTowerName = collider.gameObject.name;
-			//change animation to attack the tower
-            anim.Play("bowMoblinAttack");
-            moblinMovScript.movementSpeed = 2f;
-			// Make it so that the enemy starts focusing the tower and shooting at it repeatedly
 			if (!alreadyAttacking) 
 			StartCoroutine(StayAndAttack(collider));
         }
