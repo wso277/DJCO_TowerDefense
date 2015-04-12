@@ -16,7 +16,6 @@ public class Winner : MonoBehaviour {
 	
 	void Start()
 	{
-		logicScript = GameObject.Find("GameLogic").GetComponent<GameLogic>();
 		winTextArea = new Rect(280, 30, Screen.width, Screen.height);
 		style = new GUIStyle();
 		style.fontSize = 60;
@@ -32,14 +31,14 @@ public class Winner : MonoBehaviour {
 	{
 		
 	}
-	
+
 	void OnGUI()
 	{
 		winText = "You win!!";
 		GUI.contentColor = Color.gray;
 		GUI.Label(winTextArea, winText, style);
 		
-		scoreText = "Your score is: " + logicScript.Score.ToString();
+		scoreText = "Your score is: " + GameLogic.Score.ToString();
 		
 		GUI.Label(scoreTextArea, scoreText, scorestyle);
 	}

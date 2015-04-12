@@ -15,14 +15,18 @@ public class GameLogic : MonoBehaviour {
 
 	public GameObject[] enemies;
 
-	private int score = 1000;
-	public int Score{
+	private static int score = 5000;
+	public static int Score{
 		get {return score;} 
 		set { score = value; }
 	}
     public float timescale = 0;
 
 	public Spawner spawner;
+
+	void Awake(){
+		DontDestroyOnLoad (this);
+	}
 
 	// Use this for initialization
 	void Start () {
