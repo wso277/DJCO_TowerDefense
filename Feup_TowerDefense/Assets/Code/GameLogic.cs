@@ -9,6 +9,7 @@ public class GameLogic : MonoBehaviour {
 	public int currentLifePoints;
 	public int totalLifePoints = 100;
 	public int currentTower = 2;
+	public int towerCharges = 2;
 
 	public Image healthBar;
 
@@ -19,13 +20,14 @@ public class GameLogic : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		currentLifePoints = totalLifePoints;
-
 		instance = this;
 	}
 	
 	// Update is called once per frame
 	void Update () {	
+
 		enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
 		if (currentLifePoints <= 0) {
             Application.LoadLevel("gameOver");
 		}

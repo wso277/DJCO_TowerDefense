@@ -333,6 +333,10 @@ Prefab:
       propertyPath: m_Name
       value: Tower2
       objectReference: {fileID: 0}
+    - target: {fileID: 11473422, guid: 90c22145502f24283a89c46877da5121, type: 2}
+      propertyPath: totalLifePoints
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90c22145502f24283a89c46877da5121, type: 2}
   m_IsPrefabParent: 0
@@ -519,7 +523,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 130778658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.89999962, y: -.569999993, z: 0}
+  m_LocalPosition: {x: 10.5, y: -.25999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -579,7 +583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLifePoints: 0
-  totalLifePoints: 3
+  totalLifePoints: 2
 --- !u!1 &131294555
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,7 +1308,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275702597}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.56000042, y: -2.32999992, z: 0}
+  m_LocalPosition: {x: -12.4899998, y: -2.28999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1360,7 +1364,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275702597}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d76d1076b6f3ec459b1a15ebaeec2d1, type: 3}
   m_Name: 
@@ -1379,7 +1383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLifePoints: 0
-  totalLifePoints: 3
+  totalLifePoints: 2
 --- !u!1 &282899057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,8 +1620,8 @@ MonoBehaviour:
   spearMoblinEnemy: {fileID: 789805377}
   spawnTime: 10
   sleepBetweenSpawn: 10
-  endSpawnTime: 10
-  sleepBetweenEachEnemy: .300000012
+  endSpawnTime: 2.5
+  sleepBetweenEachEnemy: .349999994
 --- !u!1 &321570308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,6 +2215,10 @@ Prefab:
     - target: {fileID: 483478, guid: 90c22145502f24283a89c46877da5121, type: 2}
       propertyPath: m_LocalScale.y
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473422, guid: 90c22145502f24283a89c46877da5121, type: 2}
+      propertyPath: totalLifePoints
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90c22145502f24283a89c46877da5121, type: 2}
@@ -3206,7 +3214,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 789805377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.71000004, y: 2.44000006, z: 0}
+  m_LocalPosition: {x: -11.7700005, y: 3.33999991, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6513,7 +6521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLifePoints: 0
   totalLifePoints: 100
-  score: 0
+  currentTower: 2
   healthBar: {fileID: 321570310}
   enemies: []
   timescale: 0
