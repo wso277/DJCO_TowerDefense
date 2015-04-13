@@ -12,16 +12,526 @@ Platform assembly: C:\Users\ASUS\Documents\DJCO\DJCO_TowerDefense\Feup_TowerDefe
 Loading C:\Users\ASUS\Documents\DJCO\DJCO_TowerDefense\Feup_TowerDefense\feup_towerdefense_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\ASUS\Documents\DJCO\DJCO_TowerDefense\Feup_TowerDefense\feup_towerdefense_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\ASUS\Documents\DJCO\DJCO_TowerDefense\Feup_TowerDefense\feup_towerdefense_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.113 seconds
-desktop: 1024x768 60Hz; virtual: 1024x768 at 0,0
+- Completed reload, in  0.052 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\ASUS\Documents\DJCO\DJCO_TowerDefense\Feup_TowerDefense\feup_towerdefense_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\ASUS\Documents\DJCO\DJCO_TowerDefense\Feup_TowerDefense\feup_towerdefense_Data\Managed\System.dll (this message is harmless)
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.602109 ms
+UnloadTime: 9.711585 ms
 
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 801.
-Total: 0.502470 ms (FindLiveObjects: 0.060296 ms CreateObjectMapping: 0.040625 ms MarkObjects: 0.381022 ms  DeleteObjects: 0.019671 ms)
+Total: 26.243519 ms (FindLiveObjects: 0.168488 ms CreateObjectMapping: 0.040625 ms MarkObjects: 26.019438 ms  DeleteObjects: 0.011546 ms)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
+  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.handleWalkWaypoints () [0x00000] in <filename unknown>:0 
+  at ArrowMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.643496 ms
+
+Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 182.
+Total: 0.914710 ms (FindLiveObjects: 0.090658 ms CreateObjectMapping: 0.038059 ms MarkObjects: 0.470398 ms  DeleteObjects: 0.313028 ms)
 
