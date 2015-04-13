@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9c2c644b6604a929f6f960ed9ca553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 1.5
+  fireRate: 1
   damage: 10
   range: 10
   ProjectileFireLocation: {fileID: 483478}
@@ -66,7 +66,6 @@ MonoBehaviour:
     type: 2}
   effect: {fileID: 0}
   TowerShootSound: {fileID: 8300000, guid: 741ad33a9ab0d4103a4f60900953ba7e, type: 3}
-  bulletLogicScript: {fileID: 0}
 --- !u!114 &11473422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -79,7 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLifePoints: 0
-  totalLifePoints: 15
+  totalLifePoints: 10
   coll: {fileID: 0}
 --- !u!212 &21243970
 SpriteRenderer:

@@ -1649,7 +1649,7 @@ MonoBehaviour:
   spearMoblinEnemy: {fileID: 789805377}
   spawnTime: 10
   sleepBetweenSpawn: 10
-  endSpawnTime: 2.5
+  endSpawnTime: 4.5
   sleepBetweenEachEnemy: .349999994
   logicScript: {fileID: 0}
 --- !u!1 &321570308

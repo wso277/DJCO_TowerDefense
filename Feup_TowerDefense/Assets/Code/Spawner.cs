@@ -42,7 +42,7 @@ public class Spawner : MonoBehaviour
 			if (sleepBetweenSpawn > 1f) {
 				sleepBetweenSpawn -= 0.75f;
 			}
-			logicScript.towerCharges += 1 + (int)((int)(10 - spawnTime) * 0.5);
+			logicScript.towerCharges += 1 + (int)((int)(10 - spawnTime) * 1);
 			StartCoroutine (TimeDecreaser (spawnTime));
 		}
     }
