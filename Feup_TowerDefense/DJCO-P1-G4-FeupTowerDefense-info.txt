@@ -1,0 +1,10 @@
+﻿Bow Moblin – http://spritedatabase.net/file/10843
+Spear Moblin – http://spritedatabase.net/file/10843
+Torre Normal – http://www.spriters-resource.com/fullview/62214/
+Torre Multishot – recolor da Torre Normal
+Imagem aérea da FEUP – printscreen do Google Maps
+Tiro - http://www.bogleech.com/nbc/nbc-plasmaball.gif
+
+Source Code - https://github.com/wso277/DJCO_TowerDefense
+Executable - https://github.com/wso277/DJCO_TowerDefense/releases/tag/1.0.1
+Video - https://www.youtube.com/watch?v=dsR1LVV4sK0  (video without sound due to codecs problem)
