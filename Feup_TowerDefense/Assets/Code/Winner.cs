@@ -19,11 +19,11 @@ public class Winner : MonoBehaviour {
 		winTextArea = new Rect(280, 30, Screen.width, Screen.height);
 		style = new GUIStyle();
 		style.fontSize = 60;
-		style.normal.textColor = Color.red;
+		style.normal.textColor = Color.white;
 		scoreTextArea = new Rect(260, 100, Screen.width, Screen.height);
 		scorestyle = new GUIStyle();
 		scorestyle.fontSize = 30;
-		scorestyle.normal.textColor = Color.red;
+		scorestyle.normal.textColor = Color.white;
 	}
 	
 	// Update is called once per frame
